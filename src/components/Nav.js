@@ -1,12 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../App.css';
 
 const Nav = () => {
     return (
         <nav>
-            <h2><i className="fab fa-asymmetrik"></i> LyricFinder</h2>
+            <Link to="/" className="logo">Lyric Finder</Link>
         </nav>
     )
 }
+
 
 export default Nav;

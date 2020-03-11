@@ -22,7 +22,8 @@ import Moment from 'react-moment';
          this.setState( {
              track: TrackResponse.message.body.track,
              lyrics: LyricResponse.message.body.lyrics
-         } )
+         } );
+
     }
 
     render() {
