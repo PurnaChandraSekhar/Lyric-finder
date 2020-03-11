@@ -1,0 +1,162 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css?family=Sen:400,700&display=swap');
+
+/* website resetting */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global variables */
+ :root {
+    --fontColor: #202021;
+    --whiteColor: #fff;
+    --primaryColor: #FF177A;
+    --orangeColor: #FF5443;
+    --greyColor: #9e9c9c;
+ }
+
+
+html {
+    font-family: 'Sen', sans-serif;
+    font-size: 62.5%;  /*1rem = 10px */
+    color: var(--fontColor);
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, var(--primaryColor), var(--orangeColor) );
+}
+
+nav h2 {
+    font-size: 2rem;
+    color: var(--whiteColor);
+    letter-spacing: 1px;
+}
+
+/* CONTAINER */
+.container {
+    margin: 1rem auto;
+}
+
+.grid-col {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 40rem));
+    grid-template-rows: min-content;
+}
+
+/* track styling */
+.track {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border: 1px solid #e9e8e8;
+}
+
+.track_heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn-lyric {
+    color: var(--whiteColor);
+    display: block;
+    background-color: var(--orangeColor);
+}
+
+.btn-back {
+    color: var(--fontColor);
+    background: var(--whiteColor);
+    border: 1px solid #333;
+    margin: 2rem;
+}
+
+/* Lyrics container */
+.wrapper {
+    padding: 2rem 0 ;
+}
+
+.lyric-container,
+.track-details {
+    width: 60%;
+    margin: 2rem auto;
+    border: 1px solid #333;
+}
+
+.header {
+    color: var(--fontColor);
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem;
+}
+
+span {
+    display: inline-block;
+}
+
+.text {
+    padding: 1rem;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+/*Search bar */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 3.5rem;
+}
+
+.primary-heading {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.inp {
+    padding: 1rem .5rem;
+    font-size: 2rem;
+    align-self: stretch;
+   
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 1rem auto;
+}
+
+.btn-search {
+    margin-top: 1rem;
+    align-self: stretch;
+}
